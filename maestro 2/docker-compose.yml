@@ -15,8 +15,8 @@ version: '3'
       - ./slave/conf/mysql.conf.cnf:/etc/mysql/conf.d/mysql.conf.cnf
       - ./slave/data:/var/lib/mysql
     networks:
-      - host
+      - overlay
 
 networks:
-  host:
+  overlay:
 
