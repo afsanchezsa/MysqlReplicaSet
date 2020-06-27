@@ -1,0 +1,18 @@
+version: '3'
+services:
+  mysql_master:
+    image: mysql:5.7
+    env_file:
+      - ./master/mysql_master.env
+    container_name: "mysql_master"
+    restart: "no"
+    ports:
+      - 3306:3306
+    volumes:
+      - ./master/conf/mysql.conf.cnf:/etc/mysql/conf.d/mysql.conf.cnf
+      - ./master/data:/var/lib/mysql
+    networks:
+      - host
+networks:
+  host:
+ 
