@@ -12,7 +12,7 @@ services:
       - ./master/conf/mysql.conf.cnf:/etc/mysql/conf.d/mysql.conf.cnf
       - ./master/data:/var/lib/mysql
     networks:
-      - host
+      - overlay
 networks:
-  host:
+  overlay:
  
