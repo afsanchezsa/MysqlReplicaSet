@@ -9,4 +9,4 @@ max_binlog_size     = 100M
 log_slave_updates   = 1
 auto-increment-increment = 2
 auto-increment-offset = 2
-bind-address    = 172.31.45.209
+bind-address    = 0.0.0.0
