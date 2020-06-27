@@ -8,8 +8,7 @@ services:
     restart: "no"
     ports:
       - 3306:3306
-    depends_on:
-      - mysql_master
+
     volumes:
       - ./slave/conf/mysql.conf.cnf:/etc/mysql/conf.d/mysql.conf.cnf
       - ./slave/data:/var/lib/mysql
